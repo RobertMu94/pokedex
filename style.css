@@ -1,0 +1,45 @@
+body {
+    background: rgb(85, 144, 189);
+    background: linear-gradient(
+      90deg,
+      rgba(85, 144, 189, 1) 0%,
+      rgba(108, 183, 240, 1) 54%,
+      rgba(182, 216, 242, 1) 82%
+    );
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Oswald", sans-serif;
+  }
+
+.Titulo{
+    color: beige;
+
+}
+.ContenedorPokemon {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+
+.bloque-pokemon {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+
+}
+.imagen-contenedor {
+    background-image: blue;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
