@@ -19,6 +19,14 @@ function fetchPokemons(number){
 
 function crearPokemon(pokemon){
 
+    const flipCard = document.createElement('div');
+    flipCard.classList.add('flip-card');
+
+    const cardContainer = document.createElement('div');
+    cardContainer.classList.add('card-container');
+
+    flipCard.appendChild(cardContainer);
+
     const card = document.createElement('div');
     card.classList.add('bloque-pokemon');
 
@@ -46,8 +54,13 @@ card.appendChild(number);
 card.appendChild(name);
 card.appendChild(type);
 
+const cardBack = document.createElement('div');
+cardBack.classList.add('bloque-pokemon-back');
+cardBack.textContent = "carta";
 
-pokemonContenedor.appendChild(card);
+cardContainer.appendChild(card);
+cardContainer.appendChild(cardBack);
+pokemonContenedor.appendChild(flipCard);
 }
 
 fetchPokemons(151);
