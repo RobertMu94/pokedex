@@ -53,7 +53,7 @@ body {
   }
 
   img {
-    width: 100px;
+    width: 100px; 
   }
   .card-container {
     position: relative;
@@ -76,4 +76,12 @@ body {
     position: absolute;
     top: 0%;
   }
-  
+    
+  .stat-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-align: left;
+}
+
+
+ 
